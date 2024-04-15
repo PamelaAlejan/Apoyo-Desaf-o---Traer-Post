@@ -2,10 +2,8 @@ const getPosts = async () => {
     try {
         let url = 'https://jsonplaceholder.typicode.com/posts'
         let response = await fetch(url);
-        console.log(response);
+
         let data = await response.json();
-
-
 
         let nuevoArreglo = data.map((objeto) => {
             return `<ul> 
